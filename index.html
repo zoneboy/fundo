@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<nav>
+	<div id="container">
+		<nav class="desktop">
 			<ul>
 				<li class="name">Fundo</li>
 				<li>Home</li>
@@ -20,13 +20,32 @@
 			</ul>
 		</nav>
 
+
+		<nav class="mobile">
+			<h1 id="mobile_header">FUNDO</h1>
+			<span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+			<div id="mySidenav" class="sidenav">
+				<!-- <h1>HEADER LOGO</h1> -->
+		    	<a href="javascript:void(0)" class="closebtn" id="myClose" onclick="closeNav()">&times;</a>
+				<ul>
+					<li class="name">Fundo</li>
+					<li>Home</li>
+					<li>About us</li>
+					<li>Furniture</li>
+					<li>Blog</li>
+					<li>Contact us</li>
+					<li class="login">Login</li>
+				</ul>
+			</div>
+		</nav>
+
 		<div class="caption">
 			<p class="bigCaption">Furniture that<br>everyone<br>Loves</p>
 			<p class="smallCaption">We have 5000+ review and our customers trust on our<br>Furniture and Quality products</p>
 			<button class="buy">Buy Now</button>
 			<button class="explore">Explore</button>
 		</div>
-
+		
 	</div>
 	<div class="image">
 			<img src="couch.png">
@@ -59,5 +78,7 @@
 				$10
 		</div>
 	</div>
+
+	<script src="nav.js"></script>
 </body>
-</html> 
+</html>
