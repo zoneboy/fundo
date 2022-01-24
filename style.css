@@ -4,7 +4,7 @@
 	padding: 0px;
 }
 
-.container {
+#container {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #8B9E70;
@@ -16,6 +16,10 @@ nav {
 	flex: 100%;
 	justify-content: flex-end;
 	
+}
+
+nav.mobile {
+	display: none;
 }
 
 
@@ -125,6 +129,9 @@ button.explore {
 	background-color: #F5F5F5;
 }
 
+
+
+
 @media screen and (max-width: 938px) {
   .caption, .image, .box {
   	flex: 100%;
@@ -153,5 +160,82 @@ button.buy, button.explore {
 	width: 70%;
 	padding: 20px;
 	margin: 20px;
+}
+
+nav.mobile {
+	display: block;
+}
+nav.desktop {
+	display: none;
+}
+/*Mobile nav styling*/
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #313415;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mobile .openbtn {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	/*border: 1px solid rgba(255,255,255,.8);*/
+	border-radius: 5px;
+	color: rgba(255,255,255,.5);
+	background: rgba(0, 0, 0,0.0);
+	padding: 3px;
+	/*width: 5%;*/
+}
+
+.mobile h1 {
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	margin-left: 50px;
+	margin-top: 5px;
+	transition: margin-left .5s;
+	color: white;
+	/*display: block;*/
+	/*margin-bottom: 50px;*/
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#container {
+  transition: margin-left .5s;
+  padding: 16px;
+  /*margin-top: 15px;*/
 }
 }
