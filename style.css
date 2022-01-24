@@ -133,11 +133,25 @@ button.explore {
   text-align: center;
   }
 
+.bigCaption, .smallCaption, button.buy {
+	margin-left: 0;
+}
 button.buy, button.explore {
 	margin-bottom: 80px;
 }
 .image img {
 	width: 100%;
 	margin-top: -15%;
+}
+
+.box1 {
+	text-align: center;
+	padding-left: 0;
+}
+
+.box img {
+	width: 70%;
+	padding: 20px;
+	margin: 20px;
 }
 }
