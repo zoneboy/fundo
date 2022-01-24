@@ -1,7 +1,7 @@
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  // document.getElementsByClassName("sidenav")[0].style.display="block";
+  document.getElementById("mobile_header").style.display="none";
   document.getElementById("container").style.marginLeft = "250px";
   document.getElementById("mobile_header").style.marginLeft = "250px";
   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -9,7 +9,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  // document.getElementsByClassName("sidenav")[0].style.display="block";
+  document.getElementById("mobile_header").style.display="block";
   document.getElementById("container").style.marginLeft= "0";
   document.getElementById("mobile_header").style.marginLeft = "50px";
   // document.body.style.backgroundColor = "teal";
