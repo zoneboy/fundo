@@ -1,63 +1,157 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dribble</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<nav>
-			<ul>
-				<li class="name">Fundo</li>
-				<li>Home</li>
-				<li>About us</li>
-				<li>Furniture</li>
-				<li>Blog</li>
-				<li>Contact us</li>
-				<li class="login">Login</li>
-			</ul>
-		</nav>
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
 
-		<div class="caption">
-			<p class="bigCaption">Furniture that<br>everyone<br>Loves</p>
-			<p class="smallCaption">We have 5000+ review and our customers trust on our<br>Furniture and Quality products</p>
-			<button class="buy">Buy Now</button>
-			<button class="explore">Explore</button>
-		</div>
-		
-	</div>
-	<div class="image">
-			<img src="couch.png">
-	</div>
-	<div class="middle">
-		<div class="box box1">
-			<p class="bigCaption">Why we are <br>best in our<br>Town</p>
-			<p class="smallCaption">We have 5000+ Reviews and our Customers trust in our product. If you order more than $500 we can deliver free like express delivery</p>
-		</div>
-		<div class="box box2">
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #8B9E70;
+}
 
-			<img src="chair.png">
-			<p>Green chair <br>with metal
-				<br>
-				<br>
-				$36
-		</div>
-		<div class="box box3">
-			<img src="wood.png">
-			<p>Saguaro with <br>Wooden stand
-				<br>
-				<br>
-				$20
-		</div>
-		<div class="box box4">
-			<img src="vase.png">
-			<p>Corn tree with <br>Wooden rack
-				<br>
-				<br>
-				$10
-		</div>
-	</div>
-</body>
-</html>
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 100%;
+	justify-content: flex-end;
+	
+}
+
+
+
+ul li {
+	display: inline-block;
+	list-style-type: none;
+	color: white;
+	font-size: 1.1em;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+
+}
+
+.login {
+	background-color: #313415;
+	border: 1px solid #313415;
+	border-radius: 50px;
+	margin-right: 10px;
+	padding: 5px 20px 5px 20px;
+}
+
+.caption {
+	flex: 30%;
+	color: white;
+
+}
+
+.bigCaption {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 40px 0 0 40px;
+	padding: 20px;
+}
+
+.smallCaption {
+	margin: 0 0 0 40px;
+	padding: 20px;	
+}
+
+button.buy {
+	margin: 10px 0 30px 60px;
+	padding: 8px 20px 8px 20px;
+	background-color: #313415;
+	border: 1px solid #313415;
+	border-radius: 50px;
+	color: white;
+}
+
+button.explore {
+	margin: 10px 0 30px 10px;
+	padding: 8px 20px 8px 20px;
+	background-color: #8B9E70;
+	border: 1px solid white;
+	border-radius: 50px;
+	color: white;
+}
+.image {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 70%;
+	justify-content: flex-end;
+}
+.image img {
+	width: 80%;
+	margin-top: -10%;
+}
+
+.middle {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box1 {
+	flex: 25%;
+
+}
+
+.box {
+	flex: 25%;
+	align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.box1 {
+	padding-left: 40px;
+	text-align: left;
+}
+
+.box1 .smallCaption {
+	font-size: 0.8em;
+	color: #D2D2D2;
+}
+.box img{
+	width: 100%;
+	padding: 20px;
+}
+
+.box:hover {
+	background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 938px) {
+  .caption, .image, .box {
+  	flex: 100%;
+  	align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+.bigCaption, .smallCaption, button.buy {
+	margin-left: 0;
+}
+button.buy, button.explore {
+	margin-bottom: 80px;
+}
+.image img {
+	width: 100%;
+	margin-top: -15%;
+}
+
+.box1 {
+	text-align: center;
+	padding-left: 0;
+}
+
+.box img {
+	width: 70%;
+	padding: 20px;
+	margin: 20px;
+}
+}
