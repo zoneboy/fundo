@@ -37,8 +37,9 @@
 }
 
 .boxColor:hover {
-	background-color: white;
+	background-color: #54535D;
 	color: black;
+	border-radius: 10px;
 }
 
 .imageColor img {
@@ -50,14 +51,21 @@
 
 span {
 	padding: 5px;
-	font-size: 2em;
-	color: #ffbb00;
+	display: inline-block;
+	font-size: 1.5em;
 	cursor: pointer;
 	margin-right: 15px;
 	margin-left: 10px;
 	border-radius: 50px;
 	border: 1px solid #313415;
 	background-color: #313415;
+}
+
+span#light {
+		color: #ffbb00;
+}
+span#dark {
+	color: grey;
 }
 
 #container {
