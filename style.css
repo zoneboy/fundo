@@ -4,6 +4,62 @@
 	padding: 0px;
 }
 
+/*DARK MODE STARTS*/
+.middleColor {
+	background-color: #27262C;
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+}
+
+.imageColor {
+		display: flex;
+	flex-wrap: wrap;
+	flex: 70%;
+	justify-content: flex-end;
+	background-color: #27262C;
+}
+
+.boxColor {
+	flex: 25%;
+	align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.boxColor img{
+	width: 100%;
+	padding: 20px;
+}
+
+.boxColor:hover {
+	background-color: white;
+	color: black;
+}
+
+.imageColor img {
+	width: 80%;
+	margin-top: -10%;
+}
+
+/*DARK MODE ENDS*/
+
+span {
+	padding: 5px;
+	font-size: 2em;
+	color: #ffbb00;
+	cursor: pointer;
+	margin-right: 15px;
+	margin-left: 10px;
+	border-radius: 50px;
+	border: 1px solid #313415;
+	background-color: #313415;
+}
+
 #container {
 	display: flex;
 	flex-wrap: wrap;
@@ -83,6 +139,7 @@ button.explore {
 	flex-wrap: wrap;
 	flex: 70%;
 	justify-content: flex-end;
+	background-color: white;
 }
 .image img {
 	width: 80%;
@@ -92,6 +149,7 @@ button.explore {
 .middle {
 	display: flex;
 	flex-wrap: wrap;
+	background-color: white;
 }
 
 .box1 {
@@ -107,6 +165,7 @@ button.explore {
   font-size: 1.2em;
   font-weight: bold;
   cursor: pointer;
+  color: black;
 }
 
 
@@ -129,11 +188,14 @@ button.explore {
 	background-color: #F5F5F5;
 }
 
-
+.footer {
+	background-color: #8B9E70;
+	height: 3em;
+}
 
 
 @media screen and (max-width: 938px) {
-  .caption, .image, .box {
+  .caption, .image, .box, .boxColor, .imageColor {
   	flex: 100%;
   	align-items: center;
   justify-content: center;
@@ -146,7 +208,7 @@ button.explore {
 button.buy, button.explore {
 	margin-bottom: 80px;
 }
-.image img {
+.image img, .imageColor img {
 	width: 100%;
 	margin-top: -15%;
 }
@@ -156,7 +218,7 @@ button.buy, button.explore {
 	padding-left: 0;
 }
 
-.box img {
+.box img, .boxColor img {
 	width: 70%;
 	padding: 20px;
 	margin: 20px;

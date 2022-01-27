@@ -41,4 +41,46 @@ function bodyClose(e){
 }
  window.addEventListener("click", bodyClose);
 
+ //DARK AND LIGHT MODE
+
+ var dark = document.getElementById('dark');
+ var light = document.getElementById('light');
+ var middle = document.querySelector(".middle");
+ var image = document.querySelector(".image");
+ var box = document.querySelectorAll(".box")[0];
+ var boxSecond = document.querySelectorAll(".box")[1];
+ var boxThird = document.querySelectorAll(".box")[2];
+ var boxFirst = document.querySelectorAll(".box")[3];
+
+ dark.addEventListener("click", function(){
+  middle.classList.remove("middle");
+  box.classList.remove("box");
+  boxFirst.classList.remove("box");
+  boxSecond.classList.remove("box");
+  boxThird.classList.remove("box");
+  image.classList.remove("image");
+  middle.classList.add("middleColor");
+  box.classList.add("boxColor");
+  boxFirst.classList.add("boxColor");
+  boxSecond.classList.add("boxColor");
+  boxThird.classList.add("boxColor");
+  image.classList.add("imageColor");
+ })
+
+ light.addEventListener("click", function(){
+  middle.classList.add("middle");
+  box.classList.add("box");
+  boxFirst.classList.add("box");
+  boxSecond.classList.add("box");
+  boxThird.classList.add("box");
+  image.classList.add("image");
+  middle.classList.remove("middleColor");
+  box.classList.remove("boxColor");
+  boxFirst.classList.remove("boxColor");
+  boxSecond.classList.remove("boxColor");
+  boxThird.classList.remove("boxColor");
+  image.classList.remove("imageColor");
+ })
+
+
 
